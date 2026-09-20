@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Libros</title>
+
+    <!-- CONEXIÓN CON EL ARCHIVO CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gestión de Libros</h1>
+
+
+        <!-- ========================= -->
+        <!-- CREAR LIBRO -->
+        <!-- ========================= -->
+
+        <div class="seccion">
+
+            <h2>Crear libro</h2>
+
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Título del libro"
+            >
+
+            <input
+                type="text"
+                id="autor"
+                placeholder="Autor"
+            >
+
+            <input
+                type="number"
+                id="paginas"
+                placeholder="Número de páginas"
+            >
+
+            <button onclick="crearLibro()">
+                Guardar libro
+            </button>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- LISTAR LIBROS -->
+        <!-- ========================= -->
+
+        <div class="seccion">
+
+            <h2>Lista de libros</h2>
+
+            <button onclick="listarLibros()">
+                Mostrar libros
+            </button>
+
+            <div id="listaLibros"></div>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- BUSCAR LIBRO -->
+        <!-- ========================= -->
+
+        <div class="seccion">
+
+            <h2>Buscar libro por ID</h2>
+
+            <input
+                type="text"
+                id="buscarId"
+                placeholder="Ingrese el ID del libro"
+            >
+
+            <button onclick="buscarLibro()">
+                Buscar libro
+            </button>
+
+            <div id="resultadoBusqueda"></div>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- ACTUALIZAR LIBRO -->
+        <!-- ========================= -->
+
+        <div class="seccion">
+
+            <h2>Actualizar libro</h2>
+
+            <input
+                type="text"
+                id="actualizarId"
+                placeholder="ID del libro"
+            >
+
+            <input
+                type="text"
+                id="actualizarTitulo"
+                placeholder="Nuevo título"
+            >
+
+            <input
+                type="text"
+                id="actualizarAutor"
+                placeholder="Nuevo autor"
+            >
+
+            <input
+                type="number"
+                id="actualizarPaginas"
+                placeholder="Nuevo número de páginas"
+            >
+
+            <button onclick="actualizarLibro()">
+                Actualizar libro
+            </button>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- ELIMINAR LIBRO -->
+        <!-- ========================= -->
+
+        <div class="seccion">
+
+            <h2>Eliminar libro</h2>
+
+            <input
+                type="text"
+                id="eliminarId"
+                placeholder="ID del libro"
+            >
+
+            <button onclick="eliminarLibro()">
+                Eliminar libro
+            </button>
+
+            <div id="resultadoEliminar"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONEXIÓN CON JAVASCRIPT -->
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
